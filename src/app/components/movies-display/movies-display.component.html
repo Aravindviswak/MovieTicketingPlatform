@@ -1,0 +1,21 @@
+<div class="container">
+    <header>
+      <input 
+        type="text" 
+        placeholder="Search Movie ..." 
+        id="searchMovie" 
+        (input)="searchMovie($event)"
+      />
+    </header> 
+    <div class="movie_details">
+      <div class="container">
+        <div class="display_movie" *ngFor="let i of filter_data">
+          <img [src]="i.movie_image" alt="" width="200px" height="250px">
+          <h3>{{i.movie_name}}</h3>
+          <p>{{i.movie_description}}</p>
+          <h4>{{i.movie_ticket_price | currency:'USD'}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
