@@ -5,3 +5,40 @@
     float: left;
     margin: 10px;
 }
+.selected-movie-details {
+    display: flex;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .selected-movie-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .movie-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movie-info h2 {
+    margin-top: 0;
+  }
+  
+  .movie-info button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .movie-info button:hover {
+    background-color: #0056b3;
+  }
+  
