@@ -1,0 +1,17 @@
+<!-- ticket-booking.component.html -->
+<div class="ticket-booking">
+    <h2>Book Tickets for {{movieName}}</h2>
+    <div class="seat-map">
+      <div
+        class="seat"
+        *ngFor="let seat of seats"
+        [class.booked]="seat.isBooked"
+        [class.selected]="selectedSeats.includes(seat.seatNumber)"
+        (click)="toggleSeatSelection(seat)"
+      >
+        {{seat.seatNumber}}
+      </div>
+    </div>
+    <button (click)="bookSeats()" [disabled]="selectedSeats.length === 0">Book Selected Seats</button>
+  </div>
+  

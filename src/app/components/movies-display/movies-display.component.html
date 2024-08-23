@@ -18,8 +18,8 @@
       </div>
     </div>
   </div> -->
-  
   <div class="container">
+    <!-- Search input, only visible when no movie is selected -->
     <header *ngIf="!selected_movie">
       <input 
         type="text" 
@@ -33,10 +33,10 @@
     <div class="movie_details" *ngIf="!selected_movie">
       <div class="container">
         <div class="display_movie" *ngFor="let i of filter_data" (click)="selectMovie(i)">
-          <img [src]="i.movie_image" alt="" width="200px" height="250px">
-          <h3>{{i.movie_name}}</h3>
-          
-          <h4>{{i.movie_ticket_price | currency:'USD'}}</h4>
+          <img [src]="i.movie_image" alt="{{ i.movie_name }}" width="200px" height="250px">
+          <h3>{{ i.movie_name }}</h3>
+         
+          <h4>{{ i.movie_ticket_price | currency:'USD' }}</h4>
         </div>
       </div>
     </div>
@@ -44,16 +44,18 @@
     <!-- Display selected movie details -->
     <div *ngIf="selected_movie" class="selected-movie-details">
       <div class="selected-movie-content">
-        <img [src]="selected_movie.movie_image" alt="" width="400px" height="500px">
+        <img [src]="selected_movie.movie_image" alt="{{ selected_movie.movie_name }}" width="400px" height="500px">
         <div class="movie-info">
-          <h2>{{selected_movie.movie_name}}</h2>
-          <p>{{selected_movie.movie_description}}</p>
-          <a [href]="selected_movie.movie_resources">More details..</a>
-          <h3>{{selected_movie.movie_ticket_price | currency:'USD'}}</h3>
-          <button>Book Ticket</button>
+          <h2>{{ selected_movie.movie_name }}</h2>
+          <p>{{ selected_movie.movie_description }}</p>
+          <h3>{{ selected_movie.movie_ticket_price | currency:'USD' }}</h3>
+          <button (click)="booking = true">Book Ticket</button>
           <button (click)="clearSelection()">Back</button>
         </div>
       </div>
+  
+      <!-- Ticket booking component -->
+      <app-ticket-booking *ngIf="booking" [movieName]="selected_movie.movie_name!"></app-ticket-booking>
     </div>
   </div>
   

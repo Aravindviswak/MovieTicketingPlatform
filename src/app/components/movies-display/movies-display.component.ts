@@ -11,7 +11,7 @@ export class MoviesDisplayComponent implements OnInit {
   movie_data: MovieType[] = [];
   selected_movie: MovieType | null = null;
   filter_data: MovieType[] = [];
-    // Add a property to store the selected movie
+  booking: boolean = false;  // Add this line to manage the booking state
 
   constructor(private service: MovieDataService) {}
 
@@ -37,9 +37,11 @@ export class MoviesDisplayComponent implements OnInit {
 
   selectMovie(movie: MovieType) {
     this.selected_movie = movie;  // Set the selected movie when clicked
+    this.booking = false;  // Ensure the booking interface is hidden when selecting a new movie
   }
 
   clearSelection() {
     this.selected_movie = null;  // Clear the selection if needed
+    this.booking = false;  // Reset the booking state
   }
 }

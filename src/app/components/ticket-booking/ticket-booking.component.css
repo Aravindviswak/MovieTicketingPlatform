@@ -1,0 +1,34 @@
+/* ticket-booking.component.css */
+.ticket-booking {
+    text-align: center;
+  }
+  
+  .seat-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .seat.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .seat.booked {
+    background-color: #d9534f;
+    color: white;
+    cursor: not-allowed;
+  }
+  
