@@ -14,6 +14,7 @@ export class MovieDataService {
       movie_name: 'Deadpool',
       movie_description: 'Movie of Deadpool & Wolverine',
       movie_ticket_price: 50,
+      movie_resources:'https://en.wikipedia.org/wiki/Deadpool_%26_Wolverine',
       movie_image:
         'https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     },
@@ -22,6 +23,7 @@ export class MovieDataService {
       movie_name: 'Kalki',
       movie_description: 'Movie of Kalki2829',
       movie_ticket_price: 70,
+      movie_resources: 'https://en.wikipedia.org/wiki/Kalki_2898_AD',
       movie_image:
         'https://m.media-amazon.com/images/M/MV5BMTM3ZGUwYTEtZTI5NS00ZmMyLTk2YmQtMWU4YjlhZTI3NjRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     },
@@ -38,6 +40,7 @@ export class MovieDataService {
                       Sequel: Baahubali 2: The Conclusion
 `,
       movie_ticket_price: 80,
+      movie_resources:'https://en.wikipedia.org/wiki/Baahubali:_The_Beginning',
       movie_image:
         'https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_FMjpg_UX1000_.jpg',
     },
@@ -46,6 +49,7 @@ export class MovieDataService {
       movie_name: 'Jalsa',
       movie_description: 'Movie of Jalsa',
       movie_ticket_price: 10,
+      movie_resources:'https://en.wikipedia.org/wiki/Jalsa',
       movie_image:
         'https://m.media-amazon.com/images/M/MV5BMzBhNDk0ZTgtYTI5My00MGU2LWEzNDAtOGRhMTk3ZDdjMjE0XkEyXkFqcGdeQXVyNjQ1MDcxNzM@._V1_FMjpg_UX1000_.jpg',
     },
@@ -54,6 +58,7 @@ export class MovieDataService {
       movie_name: 'Devara',
       movie_description: 'Movie of Devara',
       movie_ticket_price: 40,
+      movie_resources:'https://en.wikipedia.org/wiki/Devara:_Part_1',
       movie_image:
         'https://m.media-amazon.com/images/M/MV5BYmYyYzZkZTEtOGNjYy00ZWUyLWFiYzYtYjViMzU1ZDk4ODhiXkEyXkFqcGdeQXVyNzI4NjYyMzk@._V1_.jpg',
     },
@@ -63,6 +68,7 @@ export class MovieDataService {
       movie_name: 'Pushpa',
       movie_description: 'Movie of Pushpa',
       movie_ticket_price: 47,
+      movie_resources:'https://en.wikipedia.org/wiki/Pushpa:_The_Rise',
       movie_image:
         'https://m.media-amazon.com/images/M/MV5BNGZlNTFlOWMtMzUwNC00ZDdhLTk0MWUtOGZjYzFlOTBmNDdhXkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_.jpg',
     },

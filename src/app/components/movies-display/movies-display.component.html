@@ -48,6 +48,7 @@
         <div class="movie-info">
           <h2>{{selected_movie.movie_name}}</h2>
           <p>{{selected_movie.movie_description}}</p>
+          <a [href]="selected_movie.movie_resources">More details..</a>
           <h3>{{selected_movie.movie_ticket_price | currency:'USD'}}</h3>
           <button>Book Ticket</button>
           <button (click)="clearSelection()">Back</button>
